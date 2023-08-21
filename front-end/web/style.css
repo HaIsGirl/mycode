@@ -1,0 +1,10 @@
+:root{
+    --textcol: red;
+    --fonttext: 99px
+}
+h1{
+    color: var(--textcol);
+}
+h2,h3 {
+    font-size: var(--fonttext);
+}

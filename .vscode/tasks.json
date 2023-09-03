@@ -1,7 +1,8 @@
 {
-    "type": "cppbuild",
+    "name": "C/C++: g++.exe build active file",
+    "type": "shell",
     "label": "C/C++: g++.exe build active file",
-    "command": "C:\\MinGW\\bin\\g++.exe",
+    "command": "D:\\msys2\\mingw64\\bin\\g++.exe",
     "args": [
         "-g",
         "${file}",
@@ -23,7 +24,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: g++.exe build active file",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "D:\\msys2\\mingw64\\\bin\\g++.exe",
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",

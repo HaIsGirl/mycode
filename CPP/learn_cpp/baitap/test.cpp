@@ -1,11 +1,51 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
-  double r;
-  cin >> r;
-  float number = 3.14 ;
-  double area;
-  area = 4*number*r*r;
-  cout<<"area = "<<area;
+int main(){
+    int n=3; 
+    int a[n][n];
+    int count = 1;
+    int h1 = 0, h2 = n-1, c1 = 0, c2 = n-1;
+    while(h1 <= h2 && c1 <= c2) {
+        // TH1
+        for(int i = c1; i <= c2; i++) {
+            a[h1][i] = count;
+            count++;
+            cout<<count<<endl;
+        }
+        h1++;
+
+        // TH2
+        for(int i = h1; i <= h2; i++) {
+            a[i][c2] = count;
+            count++;
+        }
+        c2--;
+
+        // TH3
+        if(c1  <= c2) {
+            for(int i = c2; i >= c1; i--) {
+                a[h2][i] = count;
+                count++;
+            }
+            h2--;
+        }
+
+        // TH4
+        if(h1 <= h2) {
+            for(int i = h2; i >= h1; i--) {
+                a[i][c1] = count;
+                count++;
+            }
+            c1++;
+        }
+    }
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
 }
+

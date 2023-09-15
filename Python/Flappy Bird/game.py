@@ -47,16 +47,16 @@ gravity = 0.25
 bird_movement = 0
 game_play = False
 #Chèn backgroud vô screen
-background= pygame.image.load('D:/Code/project_python/Flappy Bird/FileGame/assets/background-night.png').convert()
+background= pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/background-night.png').convert()
 background= pygame.transform.scale2x(background)
 #chèn sàn 
-floor= pygame.image.load('D:/Code/project_python/Flappy Bird/FileGame/assets/floor.png').convert()
+floor= pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/floor.png').convert()
 floor=pygame.transform.scale2x(floor)
 floor_x_pos = 0
 #Chèn chim
-bird_mid=pygame.image.load('D:/Code/Project_python/Flappy Bird/FileGame/assets/yellowbird-midflap.png')
-bird_up=pygame.image.load('D:/Code/Project_python/Flappy Bird/FileGame/assets/yellowbird-upflap.png')
-bird_down=pygame.image.load('D:/Code/Project_python/Flappy Bird/FileGame/assets/yellowbird-downflap.png')
+bird_mid=pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/yellowbird-midflap.png')
+bird_up=pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/yellowbird-upflap.png')
+bird_down=pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/yellowbird-downflap.png')
 bird_list = [bird_down,bird_mid,bird_up]
 bird_index=0
 bird = bird_list[bird_index]
@@ -65,7 +65,7 @@ bird_rect = bird.get_rect(center=(100,200))
 bird_flap = pygame.USEREVENT + 1
 pygame.time.set_timer(bird_flap,200)
 #chèn ống 
-pipe_surface=pygame.image.load('D:/Code/Project_python/Flappy Bird/FileGame/assets/pipe-green.png')
+pipe_surface=pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/pipe-green.png')
 pipe_surface=pygame.transform.scale2x(pipe_surface)
 #tạo timer
 spawnpipe = pygame.USEREVENT
@@ -74,14 +74,14 @@ pipe_height = [200,300,400,500]
 pipe_list =[]
 
 #tạo thông báo thua
-dead = pygame.image.load('D:/Code/Project_python/Flappy Bird/FileGame/assets/gameover.png')
+dead = pygame.image.load('D:/Code/python/Flappy Bird/FileGame/assets/gameover.png')
 dead= pygame.transform.scale2x(dead)
 #tạo font
-game_font = pygame.font.Font('D:/Code/Project_python/Flappy Bird/FileGame/04B_19.TTF')
+game_font = pygame.font.Font('D:/Code/python/Flappy Bird/FileGame/04B_19.TTF')
 #tao diem
 score = 0
 high_score = 0
-#Khối lệnh chạy game
+#Khối lệnh chạy gam
 while True:
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:

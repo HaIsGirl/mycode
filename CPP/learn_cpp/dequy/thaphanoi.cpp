@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-using namespace std;
 void thaphanoi(int n, char a,char c,char b){
     if (n==0){
         return;

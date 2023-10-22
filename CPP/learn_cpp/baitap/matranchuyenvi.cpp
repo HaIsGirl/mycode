@@ -2,18 +2,20 @@
 //Chuyen hang sang cot, cot sang hang
 
 #include<iostream>
+#define loop(i,n) for (int i=0;i<n;i++)
+#define ll long long
 using namespace std;
 int main(){
-    int n,m;
+    ll n,m;
     cin>>m>>n;
-    int A[n][m];
-    for (int i=0;i < n; i++){
-        for (int j=0; j < m;j++){
+    ll A[n][m];
+    loop(i,n){
+        loop(j,m){
             cin>>A[i][j];
         }
     }
-    for (int j=0; j < m ; j++){
-        for (int i = 0 ; i < n; i++){
+    loop(j,m){
+        loop(i,n){
             cout<<A[i][j]<<" ";
         }
         cout<<endl;

@@ -44,7 +44,10 @@ Thông thường người chưa học con trỏ sẽ ám chỉ Lan là bồ nhí
 Có 1 vấn đề là khi ta đổi 1 thông số của Thảo thì thông số của bồ nhí không thay đổi. Lý do là đoạn code trên ta chỉ coppy dữ liệu Tuổi, Chiều Cao, Vòng 1 của Thảo cho Bồ nhí nên theo thực tế Thảo và bồ nhí là hai con người khác nhau
 
 ?Khi đó con trỏ sẽ phát huy tác dụng để ám chỉ rằng bồ nhí chính là Thảo
-    #include<iostream>
+   
+
+
+ #include<iostream>
     using namespace std;
     struct con_nguoi{
         int tuoi;

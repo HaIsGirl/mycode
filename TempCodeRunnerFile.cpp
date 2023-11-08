@@ -1,19 +1,40 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+
 using namespace std;
-int main() 
-{ 
-    string s, s1="abC", s2, ss;
-    s = toupper(s1[0]);
-    cout << s <<" co ma ky tu: " << toupper(s1[0]) << '\n';
-    s = tolower(s1[0]);
-    cout << s <<" co ma ky tu: " << tolower(s1[0]) << '\n';
-    s2 = toupper(s1[1]);
-    cout << s2 <<" la ky tu HOA: " << s1[1] << '\n';
-    transform(s1.begin(),s1.end(),s1.begin(),::toupper);
-    cout << "Xau HOA: " << s1 << '\n';
-    transform(s1.begin(),s1.end(),s1.begin(), ::tolower);
-    cout << "Xau thuong: " << s1 << '\n';
-    reverse(s1.begin(),s1.end());
-    cout << "Xau dao nguoc: " << s1 << '\n';
-    return 0;
+
+// Hàm tính giai thừa sử dụng vector để lưu trữ các chữ số
+vector<int> factorial(int n) {
+  vector<int> result;
+  result.push_back(1);
+  
+  for(int i=2; i<=n; i++) {
+    int carry = 0;
+    for(int j=0; j<result.size(); j++) {
+      int temp = result[j] * i + carry;
+      result[j] = temp % 10;
+      carry = temp / 10;
+    }
+    
+    while(carry > 0) {
+      result.push_back(carry % 10);
+      carry /= 10;
+    }
+  }
+  
+  return result;
+}
+
+int main() {
+  int num;
+  cin >> num;
+  
+  vector<int> result = factorial(num);
+  
+  for(int i = result.size()-1; i>=0; i--) {
+    cout << result[i];
+  }
+  cout << endl;
+  
+  return 0;
 }

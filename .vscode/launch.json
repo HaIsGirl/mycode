@@ -2,34 +2,23 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "java",
-      "name": "Main",
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
       "request": "launch",
-      "mainClass": "Main",
-      "projectName": "Code_29928a2c"
-    },
-    {
-      "type": "java",
-      "name": "helloworld",
-      "request": "launch",
-      "mainClass": "helloworld",
-      "projectName": "Code_29928a2c"
-    },
-    {
-      "name": "(Windows) Launch",
-      "type": "cppvsdbg",
-      "request": "launch",
-      "program": "${workspaceRoot}/main.exe",
-      "args": [
-        "4",
-        "3",
-        "2",
-        "1"
-      ],
+      "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceRoot}",
-      "environment": [],
-      "externalConsole": true
+      "externalConsole": true,
+      "cwd": "c:/Users/Admin/Code",
+      "program": "c:/Users/Admin/Code/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }

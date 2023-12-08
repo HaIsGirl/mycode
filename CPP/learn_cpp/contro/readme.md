@@ -45,9 +45,7 @@ Có 1 vấn đề là khi ta đổi 1 thông số của Thảo thì thông số 
 
 ?Khi đó con trỏ sẽ phát huy tác dụng để ám chỉ rằng bồ nhí chính là Thảo
    
-
-
- #include<iostream>
+    #include<iostream>
     using namespace std;
     struct con_nguoi{
         int tuoi;
@@ -58,7 +56,8 @@ Có 1 vấn đề là khi ta đổi 1 thông số của Thảo thì thông số 
             vong_mot=v1;
             chieu_cao=cc;
         }
-    }
+    } 
+    
     int main(){
         con_nguoi thao(22, 23.5,1.70);
         con_nguoi lan(17, 50, 1.50);

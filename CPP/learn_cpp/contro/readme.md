@@ -58,8 +58,7 @@ Có 1 vấn đề là khi ta đổi 1 thông số của Thảo thì thông số 
             vong_mot=v1;
             chieu_cao=cc;
         }
-    };
-
+    }
     int main(){
         con_nguoi thao(22, 23.5,1.70);
         con_nguoi lan(17, 50, 1.50);
@@ -70,5 +69,6 @@ Có 1 vấn đề là khi ta đổi 1 thông số của Thảo thì thông số 
         cout<<bonhi -> vong_mot<<endl;
         return 0;
     }
+    
 Hiểu đơn giản biến bonhi hiện tại đang lưu địa chỉ của Thảo hay nói cách khác Bồ Nhí và Thảo đang ở chung 1 địa chỉ
 Đặc biệt hơn hết khi ta đổi tuổi của Thảo là 23 thì khi in ra tuổi của bồ nhí cũng ra 23 từ đó => Thảo chính là bồ nhí (Nếu ta thay đổi thông số về chiều cao hay vòng 1 của Thảo thì Bồ Nhí cũng sẽ thay đổi theo)

@@ -1,5 +1,4 @@
 {
     "port": "COM11",
-    "board": "arduino:avr:uno",
-    "sketch": "arduno\\vscode\\vscode.ino"
+    "board": "arduino:avr:uno"
 }

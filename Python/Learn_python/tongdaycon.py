@@ -1,5 +1,5 @@
 n=int(input())
-k=int(input()
+k=int(input())
 A=[0]*100000
 
 tam=input()

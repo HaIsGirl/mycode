@@ -1,0 +1,1 @@
+{"name":"Local: loa","url":"c:\\Users\\Admin\\Code\\CPP\\learn_cpp\\Chuyen_de_hinh_hoc\\loa.cpp","tests":[{"id":1708848259151,"input":"3\n0 0\n0 1\n1 1","output":"1.707"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Admin\\Code\\CPP\\learn_cpp\\Chuyen_de_hinh_hoc\\loa.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: capsoanhem","url":"c:\\mycode\\cayde\\capsoanhem.cpp","tests":[{"id":1711379227210,"input":"20 6","output":"(11,5)\n(13,7)\n(17,11)\n(19,13)"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\mycode\\cayde\\capsoanhem.cpp","group":"local","local":true}

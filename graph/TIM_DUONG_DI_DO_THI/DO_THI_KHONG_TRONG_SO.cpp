@@ -55,8 +55,8 @@ int main(){
     cout<<"Nhap s va t "<<endl;
     cin>>s>>t;
     adj_list();
-    dfs(1);
+    //dfs(1);
+    Path(s,t);
     for (int i = 1; i<=u; i++)
         cout<<i<<" "<<parent[i]<<endl;
-    Path(s,t);
     }

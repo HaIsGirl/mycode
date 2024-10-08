@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
     int n;
-    int A[n+5],dp[10001] = {};
     cin>>n;
+    int A[n+5],dp[10001] = {};
     for (int i = 1; i<=n; i++)
         cin>>A[i];
     dp[1] = A[1];
@@ -17,8 +17,9 @@ int main(){
     for(int i = 4; i<=n; i++){
         dp[i] = max(dp[i-3] + A[i-1] + A[i], dp[i-2] + A[i]);
         dp[i] = max(dp[i], dp[i-1]);
+        cout<<dp[i]<<" ";
     }        
-
+    cout<<endl;
     int i = n;
     stack<int> st;
     while (i > 0){

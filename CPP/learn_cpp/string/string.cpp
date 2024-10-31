@@ -16,6 +16,9 @@ int main(){
     cout<<strString1<<endl;
     cout<<strString2<<endl;
     cout<<strString3<<endl;
+
+
+
     //Nhập chuỗi
     cout<<"Enter your name: ";
     string name;
@@ -26,6 +29,7 @@ int main(){
     cout<<"Your name is "<<name<<endl;
     cout<<"Your age is "<<age<<endl;
     //Do dai chuoi
+
     string len{"xin_chao"};
     cout<<len.size()<<endl;
     cout<<len.length()<<endl;

@@ -23,7 +23,7 @@ int main(){
 			dq.pop_back();
 		}
 		dq.push_back(i);
-		cout<<A[dq.front()]<<" ";
+		cout<<A[dq.front];
 	}
 	cout<<endl;
 	return 0;
